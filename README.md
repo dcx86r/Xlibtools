@@ -10,12 +10,16 @@ and icons via the Xlib API.
 * C Compiler
 * Relevant C libs (see below)
 
+### Xrcolors
+
 **Xrcolors.pm** gets color codes through `xrdb`
 
 Example:
 
 `PERL5LIB=/home/user/dir/to/modules perl -MX11::Xlib::Util::Xrcolors -e 'my $x = 
 X11::Xlib::Util::Xrcolors->new; print $x->get('color3')'`
+
+### Xfndms
 
 **Xfndms.pm** gets pixel width of string provided with an XFT font
 
@@ -28,6 +32,8 @@ X11::Xlib::Util::Xfndms->new("Inconsolata:size=16"); print $x->get_width("hi the
 
 *Note* - font string must be in XFT format
 
+### Xbmdms
+
 **Xbmdms.pm** gets width of icons in XBM format
 
 Requires `Xlib` development files
@@ -36,6 +42,8 @@ Example:
 
 `PERL5LIB=/home/user/dir/to/modules perl -MX11::Xlib::Util::Xbmdms -e 'my $x = 
 X11::Xlib::Util::Xbmdms->new; $x->get_width("/tmp/file.xbm")'`
+
+### Xpmdms
 
 **Xpmdms.pm** gets width of icons in XPM format
 
