@@ -1,4 +1,4 @@
-package Local::Xbmdms;
+package X11::Xlib::Util::Xbmdms;
 
 use strict;
 use warnings;

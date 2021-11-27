@@ -1,4 +1,4 @@
-package Local::Xrcolors;
+package X11::Xlib::Util::Xrcolors;
 
 use strict;
 use warnings;

@@ -1,4 +1,4 @@
-package Local::Xpmdms;
+package X11::Xlib::Util::Xpmdms;
 
 use strict;
 use warnings;

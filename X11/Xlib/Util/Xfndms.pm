@@ -1,4 +1,4 @@
-package Local::Xfndms;
+package X11::Xlib::Util::Xfndms;
 
 use strict;
 use warnings;
