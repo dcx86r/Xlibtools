@@ -33,9 +33,9 @@ sub update {
 # skip comments and empty lines
 		unless ($_ =~ m/^(!|$)/) {
 # skip everything but universal color options
-			next if $_ !~ m/^\*\.((cursor)?[cC]olor[0-9]?|(fore|back)ground)/; 
+			next if $_ !~ m/^\*\.?((cursor)?[cC]olor[0-9]?|(fore|back)ground)/; 
 # format the line
-			$_ =~ s/^\*\.|(?!:)\s+|\s+$//g;
+			$_ =~ s/^\*\.?|(?!:)\s+|\s+$//g;
 			push @data, $_;
 		}
 	}
